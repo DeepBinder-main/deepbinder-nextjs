@@ -70,7 +70,7 @@ export const Sidebar = ({
       <div className="px-3 py-2 flex-1">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
           <div className="relative h-12 w-12 mr-4">
-            <Image fill alt="Logo" src="https://raw.githubusercontent.com/sanjay7178/sanjay7178.github.io/17912cfa1c39afc93c0c89167ca64fd48756b853/logo.png?token=GHSAT0AAAAAACG3TBKU3H7VZZK6JEKNNHU6ZHUNWIA" />
+            <Image fill alt="Logo" src="https://raw.githubusercontent.com/sanjay7178/sanjay7178.github.io/main/logo.png" />
           </div>
           <h1 className={cn("text-2xl font-bold", poppins.className)}>
             Deepbinder.ai
