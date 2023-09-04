@@ -11,9 +11,7 @@ export function SignInButton() {
 
   if (status === "loading") {
     return <>...</>
-  }
-
-  if (status === "authenticated") {
+  }else if (status === "authenticated") {
     return (
       // <Link href={`/dashboard`}>
       //   <Image
@@ -25,10 +23,10 @@ export function SignInButton() {
       // </Link>
       <Link href={`/dashboard`}>dashboard</Link>
     )
-  }
-
-  if (status === "unauthenticated") {
+  }else if (status === "unauthenticated") {
     return <Button onClick={() => signIn()}>Sign in</Button>
+  }else {
+    return null ;
   }
 }
 

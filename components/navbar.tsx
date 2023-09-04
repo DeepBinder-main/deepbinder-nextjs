@@ -37,6 +37,9 @@ const Navbar = () => {
       </div>
     )
   }
+  else{
+    return null ;
+  }
 }
 
 export { Navbar }
