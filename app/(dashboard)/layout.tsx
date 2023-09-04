@@ -1,12 +1,14 @@
-import AuthCheck from "@/components/AuthCheck"
-import Navbar from "@/components/navbar"
-import { Sidebar } from "@/components/sidebar"
 
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+import { ReactNode } from "react";
+import AuthCheck from "@/components/AuthCheck";
+import { Navbar } from "@/components/navbar";
+import { Sidebar } from "@/components/sidebar";
+
+type DashboardLayoutProps = {
+  children: ReactNode;
+};
+
+export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <AuthCheck>
       <div className="h-full relative">
@@ -17,11 +19,11 @@ export default function DashboardLayout({
         >
           <Sidebar apiLimitCount={0} isPro={false} />
         </div>
+        <main className="md:pl-72">
+          <Navbar />
+          {children}
+        </main>
       </div>
-      <main className="md:pl-72">
-        <Navbar />
-        {children}
-      </main>
     </AuthCheck>
   );
 }
