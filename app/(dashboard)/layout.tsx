@@ -1,6 +1,3 @@
-import React from "react"
-import Image from "next/image"
-
 import AuthCheck from "@/components/AuthCheck"
 import Navbar from "@/components/navbar"
 import { Sidebar } from "@/components/sidebar"
