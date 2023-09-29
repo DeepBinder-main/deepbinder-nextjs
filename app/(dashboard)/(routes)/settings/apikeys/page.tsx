@@ -1,12 +1,14 @@
-import {Webhook ,Settings } from "lucide-react"
+import { Settings, Webhook } from "lucide-react"
+
+import { prisma } from "@/lib/prisma"
 import { Heading } from "@/components/heading"
 
 const APIkeys = () => {
   const isPro = false
-
+  // const apicheck =  await prisma.user.apicheck
   return (
     <>
-    <Heading
+      <Heading
         title="API Keys"
         description="API Keys allow you to authenticate your account when using our API."
         icon={Webhook}
@@ -15,12 +17,10 @@ const APIkeys = () => {
       />
       <div className="px-4 lg:px-8 space-y-4">
         <div className="text-muted-foreground text-sm">
-          {isPro
-            ? "You are currently on a Pro plan."
-            : "You are currently on a free plan."}
+          Hello world
         </div>
-        {/* <SubscriptionButton isPro={isPro} /> */}
-      </div></>
+      </div>
+    </>
   )
 }
 
