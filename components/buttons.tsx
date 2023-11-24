@@ -24,7 +24,8 @@ export function SignInButton() {
       <Link href={`/dashboard`}>dashboard</Link>
     )
   }else if (status === "unauthenticated") {
-    return <Button onClick={() => signIn()}>Sign in</Button>
+    // return <Button onClick={() => signIn()}>Sign in</Button>
+    return <Link href={`/authentication/login`}>Login</Link>
   }else {
     return null ;
   }
