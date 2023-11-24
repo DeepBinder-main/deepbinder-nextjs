@@ -12,8 +12,8 @@ const SpoofAPIPage = () => {
         <iframe
 	src="https://sanjay7178-fas-demo-upload.hf.space"
 	frameBorder="0"
-	width="850"
-	height="450"
+          height="450"
+          className="m-3 w-full"
 ></iframe>
 
     </div>
