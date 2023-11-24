@@ -8,9 +8,16 @@ const SpoofAPIPage = () => {
         description="A State Of the ART Deep Learning Model with 99% test accurate on Detecting Spoof Images"
         icon={ScanFace}
         iconColor="text-violet-500"
-        bgColor="bg-violet-100"/>
+          bgColor="bg-violet-100" />
+        <iframe
+	src="https://sanjay7178-fas-demo-upload.hf.space"
+	frameBorder="0"
+	width="850"
+	height="450"
+></iframe>
+
     </div>
     </> );
 }
- 
+
 export default SpoofAPIPage;
